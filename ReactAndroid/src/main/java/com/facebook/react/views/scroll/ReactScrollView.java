@@ -293,6 +293,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
   @Override
   public void fling(int velocityY) {
 
+    // to identify this branch
     velocityY = (int)(Math.abs(velocityY) * Math.signum(mOnScrollDispatchHelper.getYFlingVelocity()));
     
     if (mPagingEnabled) {
